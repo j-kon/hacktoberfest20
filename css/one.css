@@ -1,0 +1,383 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+::selection {
+    background: yellow;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background: #f4f8fb;
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+h3 {
+    color: #738a94;
+}
+
+.red {
+    background: #F2854D;
+}
+
+ul {
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.pimp {
+    color: dodgerblue;
+}
+
+.blue {
+    background: dodgerblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2em;
+    padding: 0 5%;
+    margin-top: -110px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-top: -70px;
+    }
+
+    .container .card__description {
+        font-size: 15px !important;
+    }
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+    }
+    .turf{
+    margin-top: 15px;
+    }
+
+    h3 {
+        line-height: 3;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container .card {
+        margin-left: 5%;
+        width: 90%;
+        padding: 30px 60px 0 60px;
+    }
+
+    .new {
+        font-size: 35px !important;
+    }
+}
+
+.container .card {
+    background: #fff 50%;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+    transition: all 0.5s ease;
+}
+
+.container .card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 300px;
+    padding: 20px;
+}
+
+.container .card .content a {
+    display: block;
+    color: black;
+}
+
+.container .card__title span {
+    display: block;
+    margin-bottom: 7px;
+    color: #738a94;
+    font-size: 12px;
+    line-height: 1.15em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.container .card__title h2 {
+    margin: 0 0 0.5em;
+    font-size: 20px;
+}
+
+.container .card__description {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.container .card__description p {
+    color: #15171a;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.container .card__footer .author {
+    color: #738a94;
+    margin-top: 40px;
+    text-transform: initial;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 10%;
+    background: url('../images/one.svg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 40vh;
+    min-height: 370px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #fff;
+    line-height: 0.5;
+}
+
+header h2 {
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #191e27;
+}
+
+footer {
+    color: #191e27;
+    padding: 5% 10%;
+    text-align: center;
+    background: url('../images/footer.svg') no-repeat;
+    background-size: cover;
+}
+
+footer p {
+    max-width: 730px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+}
+
+footer p a {
+    border-bottom: 1px solid #191e27;
+}
+
+@media only screen and (max-width: 600px) {
+    .vanish {
+        display: none;
+    }
+
+    header {
+        height: 20vh;
+        min-height: 220px;
+    }
+
+    header h1 {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 0;
+    }
+
+    header h2 {
+        font-size: 15px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: #191e27;
+        font-weight: 100;
+    }
+
+    body {
+        background: #E8E8E8;
+    }
+
+}
+
+.alpha {
+    margin-top: 10px;
+}
+
+.alpha p {
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.code {
+    font-family: 'Courier New', monospace;
+}
+
+.beta {
+    font-size: 10px !important;
+}
+
+.new, .new a {
+    font-size: 27px;
+    display: inline-block !important;
+    color: #000;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+}
+.ruins li {
+    line-height: 2;
+}
+.ctr{
+    text-align: center;
+}
+.btn {
+    padding: 8px 11px;
+    border-radius: 20px;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+    transition: all 0.5s ease;
+    margin-top: 20px;
+}
+.home{
+    padding: 8px 9px;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+    background: #ff5330;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+}
+.home:hover{
+    background-color: #000;
+    color: #fff;
+}
+.btn:hover{
+    color: #000;
+    background: #fff 50%;
+}
+.nxt{
+    position: absolute;
+    color: #fff;
+    background: #F59B46 50%;
+}
+.bck{
+    background: #E82C69 50%;
+    position: relative;
+    color: #fff;
+}
+@media (min-width: 1280px) {
+    .nxt{
+        right: 45.5%
+    }
+    .bck{
+        left: 45%
+    }
+    .home{
+        left: 45.4%;
+    }
+}
+@media (max-width: 1024px) {
+    .nxt{
+        right: 44%;
+    }
+    .home{
+        left: 45%;
+    }
+    .bck{
+        left: 44%
+    }
+}
+
+@media (max-width: 800px) {
+    .nxt{
+        right: 46%;
+    }
+    .home{
+        left: 50%;
+    }
+    .bck{
+        left: 46%;
+    }
+}
+
+@media (max-width: 640px) {
+    .nxt{
+        right: 40%;
+    }
+    .home{
+        left: 44%;
+    }
+    .bck{
+        left: 40%;
+    }
+}
+
+@media (max-width: 414px) {
+ footer{
+     margin-top: 60px;
+ }
+    .nxt{
+        margin-right: -45px;
+    }
+    .home{
+        position: absolute;
+        left: 50%;
+        margin-top: 20px;
+    }
+    .bck{
+        position: absolute;
+        margin-left: -10px;
+    }
+}
