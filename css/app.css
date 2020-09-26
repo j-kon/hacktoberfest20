@@ -112,7 +112,7 @@ img {
 
 .container .card__title span {
     display: block;
-    margin-bottom: 7px;
+    margin-bottom: 0px;
     color: #738a94;
     font-size: 12px;
     line-height: 1.15em;
@@ -122,7 +122,7 @@ img {
 }
 
 .container .card__title h2 {
-    margin: 0 0 0.5em;
+    margin: 0 0 0.0em;
     font-size: 20px;
 }
 
@@ -130,7 +130,7 @@ img {
     font-family: 'Source Sans Pro', sans-serif;
     color: #15171a;
     line-height: 1.7;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
     font-size: 15px;
     font-weight: 100;
 }
@@ -172,7 +172,6 @@ footer {
     color: #191e27;
     padding: 5% 10%;
     text-align: center;
-    background: url('../images/footer.svg') no-repeat;
     background-size: cover;
 }
 

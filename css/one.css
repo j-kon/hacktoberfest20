@@ -82,9 +82,9 @@ img {
     margin-top: -110px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 0px) {
     .container {
-        margin-top: -70px;
+        margin-top: -0px
     }
 
     .container .card__description {
@@ -151,7 +151,7 @@ img {
 }
 
 .container .card__title h2 {
-    margin: 0 0 0.5em;
+    margin: 0 0 0.0em;
     font-size: 20px;
 }
 
@@ -161,7 +161,7 @@ img {
 }
 
 .container .card__description p {
-    color: #15171a;
+
     line-height: 1.7;
     margin-bottom: 20px;
 }
@@ -180,7 +180,7 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 5% 10%;
-    background: url('../images/one.svg') no-repeat;
+    background: url('../images/hack.svg') no-repeat;
     background-size: cover;
     text-align: center;
     height: 40vh;
