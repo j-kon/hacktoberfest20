@@ -8,9 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-::selection {
-    background: yellow;
-}
 
 html,
 body {
