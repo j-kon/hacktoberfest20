@@ -1,11 +1,11 @@
 .card_accordion {
     background-color: var(--background);
     display: block;
-    width: 300px;
+    width: 270px;
     min-height: 90px;
     border: 3px solid var(--primary);
     padding: 15px;
-    margin: calc(50vh - 30px) auto 0 auto;
+    margin: 50px 0 0 100%;
     box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
           20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
           30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
@@ -13,7 +13,7 @@
     transition: box-shadow 1s, top 1s, left 1s;
     position: relative;
     top: 0;
-    left: 0;
+    left: 10px;
     cursor: pointer;
   }
   
@@ -49,16 +49,25 @@
     color: var(--primary);
   }
   
-  .card_accordion p {
-    font-size: 9px;
+  .p {
+    font-size: 10px;
     letter-spacing: 0.5px;
-    margin-bottom: 10px;
+    margin: 20px 0;
+    color: rgba(15, 125, 118, 1);
+  }
+
+  .t {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+    color: rgb(197, 30, 128);
   }
   
   .card_accordion h2 {
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     font-family: "Archivo Black", "Archivo", sans-serif;
     font-weight: normal;
+    color: rgba(15, 125, 118, 1);
   }
   
