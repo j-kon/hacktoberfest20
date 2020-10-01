@@ -21,8 +21,24 @@ Visit the hactoberfest site for more details :- https://hacktoberfest.digitaloce
 - Fork this Repository using the button at the top
 - Clone your forked repository to your pc
 - Create a new branch for your modifications (ie. `git branch new-user` and check it out `git checkout new-user` and `git checkout -b new-user`)
-- Add your your own card quote following the previous format `index.html/`
+- Add your your own card quote following the previous format `index.html`
 - Add your quote card (`git add -A`), commit (`git commit -m "added myself"`) and push (`git push origin new-user`)
 - Create a pull request
 - Star this repository
 
+# How to make your first Pull Request
+
+Replace `<YOUR-USERNAME>` with your GitHub username in this guide.
+
+## 1. Add your quote card to the folder
+
+Add a quote card of your choice in `index.html`.
+
+```
+index.html
+```
+
+
+## 2. Wait for Pull Request to merge
+
+## 3. Celebrate - you've done your first pull request!!
