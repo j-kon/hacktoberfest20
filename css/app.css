@@ -70,7 +70,7 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 2em;
     padding: 0 6%;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 600px) {

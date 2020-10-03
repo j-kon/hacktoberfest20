@@ -1,11 +1,13 @@
  
   .carousel {
     position: relative;
-    height: 300px;
-    width: 580px;
-    top: 0;
-    left: 2%;
+    width: 85%;
+    left: 0;
+    right: 0;
+    margin: 3em auto;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     font-family: 'Open Sans', sans-serif;
   }
   
