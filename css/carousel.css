@@ -1,11 +1,13 @@
  
   .carousel {
     position: relative;
-    height: 300px;
-    width: 580px;
-    top: 0;
-    right: 5%;
+    width: 85%;
+    left: 0;
+    right: 0;
+    margin: 3em auto;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     font-family: 'Open Sans', sans-serif;
   }
   
@@ -51,6 +53,12 @@
       left: 0;
       top: 10px;
   }
+
+  .contributor:hover {
+    color: rgb(194, 30, 145);
+    font-size: 13px;
+  }
+
   
   .bar {
     position: relative;
