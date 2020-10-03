@@ -53,6 +53,12 @@
       left: 0;
       top: 10px;
   }
+
+  .contributor:hover {
+    color: rgb(194, 30, 145);
+    font-size: 13px;
+  }
+
   
   .bar {
     position: relative;
