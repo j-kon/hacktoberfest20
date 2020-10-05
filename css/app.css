@@ -146,10 +146,10 @@ header {
     flex-direction: column;
     padding: 0% 0%;
     background: url('../images/hack.svg') no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     text-align: center;
     height: 20vh;
-    min-height: 500px
+    min-height: 550px
 }
 
 header h1 {
@@ -190,7 +190,6 @@ footer p a {
 
     header {
         height: 20vh;
-        min-height: 220px;
     }
 
     header h1 {
