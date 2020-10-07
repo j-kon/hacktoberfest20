@@ -1,0 +1,107 @@
+ 
+  .carousel {
+    position: relative;
+    width: 85%;
+    left: 0;
+    right: 0;
+    margin: 3em auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .card_car {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .card_car:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card_car:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card_car:hover ~ .card_car {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  .card_title {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+
+  .card_title p {
+      color: rgb(155, 108, 172);
+      font-size: 12px;
+      position: relative;
+      left: 0;
+      top: 10px;
+  }
+
+  .contributor:hover {
+    color: rgb(194, 30, 145);
+    font-size: 13px;
+  }
+
+  
+  .bar {
+    position: relative;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+  }
+  
+  .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .filledbar {
+    position: relative;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgb(58, 0, 96) 0%, rgb(156, 9, 167) 65%, rgb(194, 30, 145) 100%);
+    transition: 0.3s ease-out;
+  }
+  
+  .card_car:hover .filledbar {
+    width: 100%;
+    transition: 0.3s ease-out;
+  }
+
+  .card_description {
+      color: white;
+      font-size: 10px;
+      position: absolute;
+      left: 15px;
+      top: 120px;
+  }
+
+  .card_footer {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-size: .8rem;
+    left: 20px;
+  }

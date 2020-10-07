@@ -1,0 +1,73 @@
+.card_accordion {
+    background-color: var(--background);
+    display: block;
+    width: 270px;
+    min-height: 90px;
+    border: 3px solid var(--primary);
+    padding: 15px;
+    margin: 50px 0 0 100%;
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+          20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
+          30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
+          40px -40px 0 -3px var(--background), 40px -40px var(--red); 
+    transition: box-shadow 1s, top 1s, left 1s;
+    position: relative;
+    top: 0;
+    left: 10px;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    top: -40px;
+    left: 40px;
+    box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+        0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+        0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+        0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+  }
+  
+  :root {
+    --primary: rgb(85, 91, 255);
+    --secondary: rgb(34, 210, 160);
+    --background: rgb(255, 255, 255);
+    --green: rgb(31, 193, 27);
+    --yellow: rgb(255, 217, 19);
+    --orange: rgb(255, 156, 85);
+    --red: rgb(255, 85, 85);
+  } 
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: radial-gradient(var(--secondary) 30%, var(--background) 30%);
+    background-size: 2px 3px;
+    font-family: "Archivo", sans-serif;
+    color: var(--primary);
+  }
+  
+  .p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+    color: rgba(15, 125, 118, 1);
+  }
+
+  .t {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+    color: rgb(197, 30, 128);
+  }
+  
+  .card_accordion h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+    color: rgba(15, 125, 118, 1);
+  }
+  
