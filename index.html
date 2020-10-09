@@ -15,6 +15,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/accordion.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
@@ -26,7 +27,44 @@
             // Internal JavaScript Code Here
     </script>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:600');
 
+
+:root {
+	--main-color: #643A7A;
+	--secondary-color: #741CAF;
+	--sans: "josefin sans", sans serif;
+}
+    .card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container .card1 {
+  border: solid 1px #f2f2f2;
+  margin: 5px;
+}
+
+.card-container .card1 .card-body1 {
+  padding: 10px;
+}
+
+.card-container .card1 img.card-img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+.content1{
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+}
+
+.author{
+    font-size: 22px;
+    font-family: "dancing script", cursive;
+}
+</style>
 <body>
 <header>
     <h1></h1>
@@ -680,9 +718,36 @@
                                     <div class="author">Twopill</div>
                                 </div>
                             </div>
+
+                            <div class="card-container">
+                                <div class="card1">
+                                <img src="https://picsum.photos/600/500/?random" alt="Random photo" class="card-img">
+                                  <div class="card-body1">
+                                    <p>Caption 1</p>
+                                 </div>
+                                </div>
+                            </div>
+
+            <div class="card-container">
+                <div class="card1">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FJohn-Lennon&psig=AOvVaw0IwLdiLfA5p-pT-7vULVyE&ust=1602124049063000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiL5ay3oewCFQAAAAAdAAAAABAD" alt="Random photo" class="card-img">
+                  <div class="card-body1">
+                    <p class="content1">"Life is what happens when you're busy making other plans."</p><br>
+                    <p class="author">- John Lennon</p>
+                 </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card1">
+                <img src="https://picsum.photos/600/500/?random" alt="Random photo" class="card-img">
+                  <div class="card-body1">
+                    <p>Caption 1</p>
+                 </div>
+                </div>
             </div>
         </div>
     </div>
+    
 </section>
 
 
